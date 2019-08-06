@@ -2,6 +2,13 @@
     .chart-row{
         display: flex;
         width: 100%;
+        flex-direction: row;
+        @media screen and (max-width: 996px) {
+            &.first, &.sec{
+                flex-direction: column-reverse;
+            }
+        }
+        // bar doughnut line scatter
         .chartBox{
             padding: 30px;
             display: flex;
@@ -9,6 +16,10 @@
             width: 100%;
             margin: 15px;
             background: rgba(18,43,60,0.5);
+            @media screen and (max-width: 996px) {
+                padding: 15px;
+                margin: 20px 0px;
+            }
             .title{
                 font-size: 25px;
                 font-weight: 300;

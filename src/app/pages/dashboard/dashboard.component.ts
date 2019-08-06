@@ -25,9 +25,10 @@ var data = [
   })
 
 export class DashboardComponent{
+  
   single: any[];
   multi: any[];
-
+  
   view: any[] = [700, 400];
   colorScheme = {
     pie:{
@@ -39,7 +40,12 @@ export class DashboardComponent{
   };
 
   constructor() {
+    this.view = [innerWidth / (innerWidth >= 996 ? 3 : 1.3), 400];
     Object.assign(this, { data })
+  }
+
+  onResize(event) {
+    this.view = [event.target.innerWidth / (event.target.innerWidth >= 996 ? 3 : 1.3), 400];
   }
 
   onSelect(event) {

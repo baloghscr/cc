@@ -6,7 +6,7 @@ import { FactorialComponent } from '../pages/factorial/factorial.component';
 import { AppComponent } from '../app.component';
 
 
-const routes: Routes = [
+export const routes: Routes = [
   // redirect if no path
   {
     path: '',

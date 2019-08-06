@@ -8,6 +8,9 @@
         display: flex;
         width: 100%;
         margin: 0 60px;
+        @media screen and (max-width: 996px) {
+            margin: 0 20px;
+        }
     }
     .left{
         .logo{
@@ -23,6 +26,9 @@
             color: #fff;
             font-size: 41px;
             font-weight: 300;
+            @media screen and (max-width: 996px) {
+                display: none;
+            }
         }
     }
     .right{
@@ -33,6 +39,9 @@
                 position: relative;
                 font-size: 25px;
                 margin: 0 0 0 25px;
+                @media screen and (max-width: 996px) {
+                    font-size: 16px;
+                }
                 a{
                     color: #52B6B0;
                     &:hover{
@@ -61,6 +70,9 @@
         }
         .icons{
             display: flex;
+            @media screen and (max-width: 996px) {
+                display: none;
+            }
             .icon{
                 width: 27px;
                 height: 33px;

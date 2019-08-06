@@ -14,8 +14,8 @@ import { FactorialComponent } from './pages/factorial/factorial.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     DashboardComponent,
+    NavbarComponent,
     FizzComponent,
     FactorialComponent
   ],
@@ -25,6 +25,7 @@ import { FactorialComponent } from './pages/factorial/factorial.component';
     NgxChartsModule,
     BrowserAnimationsModule
   ],
+  exports:[NavbarComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

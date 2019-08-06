@@ -5,6 +5,7 @@
             <div class="chartBox">
                 <h3 class="title">Doughnut Chart</h3>
                 <ngx-charts-pie-chart
+                    (window:resize)="onResize($event)"
                     [view]="view"
                     [doughnut]="true"
                     [trimLabels]="true"
@@ -19,6 +20,7 @@
             <div class="chartBox">
                 <h3 class="title">Bar Chart</h3>
                 <ngx-charts-bar-vertical
+                    (window:resize)="onResize($event)"
                     [view]="view"
                     [scheme]="colorScheme.bar"
                     [results]="data"
@@ -36,22 +38,25 @@
     <div class="chart-row sec">
         <div class="chartBox">
             <h3 class="title">Scatter Plot</h3>
-            <ngx-charts-bar-vertical
-                [view]="view"
-                [scheme]="colorScheme.bar"
-                [results]="data"
-                [gradient]="true"
-                [xAxis]="true"
-                [yAxis]="true"
-                [showXAxisLabel]="true"
-                [showYAxisLabel]="true"
-                (select)="onSelect($event)">
-            </ngx-charts-bar-vertical>
+                <ngx-charts-bar-vertical
+                    (window:resize)="onResize($event)"
+                    [view]="view"
+                    [scheme]="colorScheme.bar"
+                    [results]="data"
+                    [gradient]="true"
+                    [xAxis]="true"
+                    [yAxis]="true"
+                    [showXAxisLabel]="true"
+                    [showYAxisLabel]="true"
+                    (select)="onSelect($event)">
+                </ngx-charts-bar-vertical>
         </div>
 
         <div class="chartBox">
             <h3 class="title">Line Chart</h3>
+            
             <ngx-charts-pie-chart
+                (window:resize)="onResize($event)"
                 [view]="view"
                 [doughnut]="true"
                 [trimLabels]="true"
