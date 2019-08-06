@@ -1,0 +1,23 @@
+<div class="navbar">
+    <div class="left">
+        <div class="logo"></div>
+        <h1>Chart Base</h1>
+    </div>
+    <div class="right">
+        <ul>
+            <li [routerLink]="item.path"
+            [routerLinkActive]="'active'"
+            [routerLinkActiveOptions]="{exact: true}"
+            class="item"
+            *ngFor="let item of items">
+                <a>
+                    {{item.name}}
+                </a>
+            </li>
+        </ul>
+        <div class="icons">
+            <div class="icon noti"></div>
+            <div class="icon user"></div>
+        </div>
+    </div>
+</div>

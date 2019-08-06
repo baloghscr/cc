@@ -1,0 +1,16 @@
+
+<div class="fizzBuzzPage">
+    <h2 class="pageTitle">FizzBuzz coding challenge</h2>
+    <div class='d-flex align-items-center flex-direction-column'>
+        <div class="d-flex flex-row">
+            <button class='green' (click)="getFizzBuzz()">Start FizzBuzz</button>
+            <button class='red' (click)="clearFizzBuzz()">Stop FizzBuzz</button>
+        </div>
+        <div class="displayFizz">
+            <ul>
+                <li *ngFor="let key of fizzbuzz; let i = index">
+                    <span>{{i + 1}}. - </span>{{key}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

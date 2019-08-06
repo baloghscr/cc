@@ -1,0 +1,78 @@
+.navbar{
+    height: 97px;
+    display: flex;
+    align-items: center;
+    background-color: #122B3C;
+    border-bottom: 1px solid #fff;
+    .left, .right{
+        display: flex;
+        width: 100%;
+        margin: 0 60px;
+    }
+    .left{
+        .logo{
+            width: 31px;
+            height: 44px;
+            background-image: url('../../../assets/Group.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-right: 28px;
+        }
+        h1{
+            color: #fff;
+            font-size: 41px;
+            font-weight: 300;
+        }
+    }
+    .right{
+        justify-content: end;
+        ul{
+            display: flex;
+            li{
+                position: relative;
+                font-size: 25px;
+                margin: 0 0 0 25px;
+                a{
+                    color: #52B6B0;
+                    &:hover{
+                        cursor: pointer;
+                        text-decoration: none;
+                        outline: none;
+                    }
+                }
+                &.active{
+                    a{
+                        color: #fff;
+                    }
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        display: block;
+
+                        height: 11px;
+                        width: 100%;
+                        background: -moz-linear-gradient(top, rgba(82,182,176,1) 0%, rgba(97,233,229,0.02) 98%, rgba(97,233,229,0) 100%); 
+                        background: -webkit-linear-gradient(top, rgba(82,182,176,1) 0%,rgba(97,233,229,0.02) 98%,rgba(97,233,229,0) 100%);
+                        background: linear-gradient(to bottom, rgba(82,182,176,1) 0%,rgba(97,233,229,0.02) 98%,rgba(97,233,229,0) 100%); 
+                    }
+                }
+            }
+        }
+        .icons{
+            display: flex;
+            .icon{
+                width: 27px;
+                height: 33px;
+                margin: 0 0 0 30px;
+                cursor: not-allowed;
+                
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                &.noti{background-image: url('../../../assets/ic_notifications.png');}
+                &.user{background-image: url('../../../assets/ic_person.png');}
+            }
+        }
+    }
+}

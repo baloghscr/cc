@@ -1,0 +1,12 @@
+<div class="factorialPage">
+    <h2 class="pageTitle">Find the Factorial coding challenge</h2>
+    <div class='d-flex align-items-center flex-direction-column'>
+        <h3>Factorial:</h3>
+        <input type="text" class="form-control" (input)="factorial($event.target.value)" inputmode="numeric">
+        
+        <h3>Result:</h3>
+        <div class="result">
+            {{value}}
+        </div>
+    </div>
+</div>

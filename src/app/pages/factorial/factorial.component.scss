@@ -1,0 +1,34 @@
+.factorialPage{
+    h3{
+        font-size: 35px;
+        color: #fff;
+        font-weight: 300;
+        width: 700px;
+        margin: 50px 0 27px 0;
+    }
+    
+    .result{
+        background: rgba(219, 255, 247, 0.2);
+        box-shadow: 0 2px 4px 0 rgba(142, 173, 165, 0.5), inset 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        width: 700px;
+        height: 97px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        color: #fff;
+    }
+    input{
+        border:none;
+        color: #fff;
+        font-size: 25px;
+        text-align: center;
+        width: 700px;
+        height: 97px;
+        background: rgba(18,43,60,0.50);
+        box-shadow: 0 2px 4px 0 rgba(142,173,165,0.50), inset 0 1px 3px 0 rgba(0,0,0,0.50);
+        border-radius: 5px;
+        border-radius: 5px;
+    }
+}
